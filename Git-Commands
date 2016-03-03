@@ -73,8 +73,10 @@
 10) 'git checkout HEAD^3' This command goes 3 commits back and creates no branch. We can play here and do stuff. If we wanna create branches
 out of the commits made(if any) we can create by the follwoing command.
 #git checkout -b <branchname>
+Being here and if we change to branch we will ,oose all the commits.
 Conclusion: If you want to go few commits back and play with code, this is useful. And if turned interesting and if you want to create branch
-out of it, we can do it.
+out of it, we can do it. 
 
 
-11)
+11)'git revert HEAD~2' git revert undoes a commit by creating new commit.
+
