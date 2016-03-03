@@ -65,4 +65,8 @@
  -f option reemoves all the uncommited changes
     git checkout with uncommited changes won't take your HAED to next branch but will throw an error
     
+ 9) As we have seen 'git checkout <branch> -f' will remove all uncommitted changes. 
+ So, if wanna move to other branch from current branch by not distrubing local changes use the follwoing command:
+ 'git stash' and then do the 'git checkout branch'. If you come back to previous branch run 'git stash pop' command to revert the changes.
+    
  
