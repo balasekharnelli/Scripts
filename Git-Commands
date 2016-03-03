@@ -60,3 +60,9 @@
   #git add . ; git commit -m "msg"
    To comeback from commit to staging:
    git reset --soft HEAD^1
+   
+ 8) git checkout <branch> -f
+ -f option reemoves all the uncommited changes
+    git checkout with uncommited changes won't take your HAED to next branch but will throw an error
+    
+ 
