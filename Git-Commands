@@ -23,7 +23,7 @@
 5) Remove untracked files (Whicj are not added) from the whole respository
 	'git clean -fdx'
 	
-	 To perform a dry run of git clean 
+	To perform a dry run of git clean 
 	'git clean -n'
 	
 	Remove untracked files but limit it to the specific path
@@ -52,7 +52,7 @@
   #git status
   #git add .
   
-   To comeback from staging to Wworking Directory
+   To comeback from staging to Working Directory
   #git reset .
   #git reset test.txt (For test.txt only)
   #git reset sample.txt (For sample.txt only)
@@ -79,4 +79,9 @@ out of it, we can do it.
 
 
 11)'git revert HEAD~2' git revert undoes a commit by creating new commit.
+
+
+12) 'git cherry-pick'
+Cherry picking in git means to choose a commit from one branch and apply it onto another.
+
 
