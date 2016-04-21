@@ -84,4 +84,12 @@ out of it, we can do it.
 12) 'git cherry-pick'
 Cherry picking in git means to choose a commit from one branch and apply it onto another.
 
+13) Remove branch from remote
+  git push origin :<branch>
+
+14) Remove branch from local 
+  git branch -d <branch_name>
+  git branch -D <branch_name> [forcefully]
+  
+
 
