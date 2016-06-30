@@ -6,7 +6,7 @@
 #DATE: 3/3/2016
 #
 
-#A script to purge the objects of citrixsaasdata-builds/test S3 bucket.
+#A script to purge the objects of S3 bucket.
 
 #
 ##VARIABLES
@@ -19,7 +19,7 @@ ThirtyDaysInSecs="2592000"
 ThirtyDaysOldToBuildDate=$(expr $BuildDate - $ThirtyDaysInSecs)
 
 #Capturing Jenkins job Build time from the follwoing file.
-$S3_BIN cp s3://${BUCKET_NAME}/test/DateFile /tmp/DateFile
+$S3_BIN cp s3://${BUCKET_NAME}/DateFile /tmp/DateFile
 
 BuildDate=`cat /tmp/DateFile|awk {'print $1" "$2'}`
 BuildDate=`date -d"$BuildDate" +%s`
